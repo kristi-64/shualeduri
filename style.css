@@ -55,40 +55,74 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
 }
 
 nav a {
   text-decoration: none;
-  color: #cfcfcf;
-  font-size: 13px;
+  color: #b7b7b7;
+  padding: 16px 18px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
   transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #ff4f93;
+  background: #2c2c2e;
+}
+
+nav a.active {
+  background: #ff2d87;
+  color: white;
+}
+
+nav a i {
+  width: 18px;
 }
 
 .following {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 25px;
+
+  color: #6f6f6f;
   font-size: 11px;
-  color: #888;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .user {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
-  font-size: 12px;
-  color: #d5d5d5;
+  gap: 14px;
+
+  margin-bottom: 18px;
+
+  color: #d7d7d7;
+  font-size: 14px;
 }
 
 .user img {
-  width: 28px;
-  height: 28px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.load-users {
+  margin-top: 20px;
+  color: #8f8f8f;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.load-users:hover {
+  color: #ff2d87;
 }
 
 /* =======================
