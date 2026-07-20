@@ -6,17 +6,13 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background: #f8f8f8;
+  background: #fff;
   color: #333;
 }
 
-/* =======================
-   LAYOUT
-======================= */
-
-body {
+.container {
   display: flex;
-  min-height: 100vh;
+  align-items: flex-start;
 }
 
 .sidebar {
@@ -24,10 +20,7 @@ body {
   background: #1d1d1f;
   color: white;
   padding: 30px 20px;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
+  height: 130vh;
 }
 
 .logo {
@@ -46,8 +39,32 @@ body {
   color: #8a8a8a;
   cursor: pointer;
 }
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.burger {
+  color: #7c7c7c;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.burger:hover {
+  color: #ff2d87;
+}
+
 .main {
-  margin-left: 230px;
+  margin-left: 50px;
   width: calc(100% - 230px);
   padding: 30px;
 }
@@ -125,10 +142,6 @@ nav a i {
   color: #ff2d87;
 }
 
-/* =======================
-   HEADER
-======================= */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -204,10 +217,6 @@ header input {
   opacity: 0.9;
 }
 
-/* =======================
-   CATEGORIES
-======================= */
-
 .categories {
   display: flex;
   gap: 12px;
@@ -229,10 +238,6 @@ header input {
   background: #ff4f93;
   color: white;
 }
-
-/* =======================
-   GALLERY
-======================= */
 
 .gallery {
   display: grid;
@@ -262,10 +267,6 @@ header input {
   line-height: 1.5;
 }
 
-/* =======================
-   LOAD MORE
-======================= */
-
 .load-more {
   display: block;
   margin: 40px auto;
@@ -277,12 +278,11 @@ header input {
   cursor: pointer;
 }
 
-/* =======================
-   DESIGNERS
-======================= */
-
 .designers {
-  margin-top: 80px;
+  margin-top: 0px;
+  background-color: #fafafa;
+  padding: 50px;
+  margin-right: 0px;
 }
 
 .designers-header {
@@ -339,9 +339,12 @@ header input {
   border-color: #ff4f93;
 }
 
-/* =======================
-   FOOTER
-======================= */
+.designers,
+footer {
+  width: 80%;
+  clear: both;
+  margin-left: 223px;
+}
 
 footer {
   margin-top: 90px;
@@ -386,10 +389,6 @@ footer p {
   font-size: 12px;
   color: #777;
 }
-
-/* =======================
-   RESPONSIVE
-======================= */
 
 @media (max-width: 1200px) {
   .gallery {
