@@ -283,6 +283,7 @@ header input {
   background-color: #fafafa;
   padding: 50px;
   margin-right: 0px;
+  height: fit-content;
 }
 
 .designers-header {
@@ -412,13 +413,14 @@ footer p {
 
   .sidebar {
     width: 100%;
-    height: auto;
-    padding: 20px;
-    margin-right: 0%;
+    height: 100%;
+    padding: 10px;
+    margin: 0%;
   }
 
   .main {
     width: 100%;
+    margin: 0;
     padding: 20px;
   }
 
@@ -458,11 +460,38 @@ footer p {
   }
 
   .designer-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
   }
 
+  .designer img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .designer h4 {
+    font-size: 11px;
+  }
+
+  .designer p {
+    font-size: 10px;
+  }
+
+  .follow {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+  .designers,
   footer {
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    display: block;
+    height: auto;
   }
 }
 
@@ -472,6 +501,12 @@ footer p {
   }
 
   .designer-list {
-    grid-template-columns: 1fr;
+    .designer-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .designers {
+    object-fit: cover;
   }
 }
