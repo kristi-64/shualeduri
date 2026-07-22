@@ -559,6 +559,19 @@ footer p {
   color: #ff4f93;
   font-weight: 700;
 }
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  cursor: pointer;
+  transition: 0.3s;
+}
 .profile-circle:hover {
   background: #ff4f93;
   color: #fff;
