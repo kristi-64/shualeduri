@@ -344,6 +344,7 @@ footer {
   width: 85%;
   clear: both;
   margin-left: 223px;
+  margin-top: -50px;
 }
 
 footer {
@@ -405,15 +406,42 @@ footer p {
     flex-direction: column;
   }
 
+  .container {
+    flex-direction: column;
+  }
+
   .sidebar {
-    position: static;
     width: 100%;
     height: auto;
+    padding: 20px;
+    margin-right: 0%;
   }
 
   .main {
     width: 100%;
-    margin-left: 0;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    width: auto;
+  }
+
+  .users {
+    display: none;
+  }
+
+  .load-users {
+    display: none;
+  }
+
+  .logo {
+    margin-bottom: 20px;
   }
 
   header {
