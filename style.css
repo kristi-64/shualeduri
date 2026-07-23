@@ -498,10 +498,6 @@ footer p {
     width: 100%;
   }
 
-  .orders table thead {
-    display: none;
-  }
-
   .orders table {
     min-width: 500px;
   }
