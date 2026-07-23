@@ -501,6 +501,14 @@ footer p {
   .orders table thead {
     display: none;
   }
+
+  .orders table {
+    min-width: 500px;
+  }
+
+  .table-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (max-width: 500px) {
