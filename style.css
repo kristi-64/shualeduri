@@ -493,6 +493,14 @@ footer p {
     display: block;
     height: auto;
   }
+
+  .orders {
+    width: 100%;
+  }
+
+  .orders table thead {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -561,6 +569,11 @@ footer p {
   font-weight: 700;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .profile-circle {
   width: 40px;
   height: 40px;
